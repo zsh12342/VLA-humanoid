@@ -1,0 +1,32 @@
+{
+  "model": {
+    "action_dim": 26,
+    "chunk_length": 16,
+    "state_dim": 59,
+    "visual_feature_dim": 0,
+    "instruction_vocab_size": 2,
+    "instruction_embed_dim": 64,
+    "condition_dim": 256,
+    "diffusion_dim": 256,
+    "num_diffusion_steps": 30,
+    "guidance_scale": 1.5
+  },
+  "data": {
+    "data_dir": "/root/kuavo_ws/src/vla/trajectories",
+    "subsample_k": 3,
+    "chunk_length": 16,
+    "chunk_overlap": 4
+  },
+  "training": {
+    "epochs": 100,
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "min_lr": 1e-06,
+    "weight_decay": 0.0001
+  },
+  "output": {
+    "save_dir": "/root/kuavo_ws/src/vla/checkpoints",
+    "save_interval": 5
+  },
+  "device": "cuda"
+}

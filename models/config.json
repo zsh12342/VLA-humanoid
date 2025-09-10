@@ -1,0 +1,20 @@
+{
+  "model_config": {
+    "action_dim": 26,
+    "chunk_length": 16,
+    "state_dim": 60,
+    "instruction_vocab_size": 2,
+    "diffusion_dim": 512,
+    "num_diffusion_steps": 1000
+  },
+  "num_epochs": 100,
+  "batch_size": 32,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "min_lr": 1e-06,
+  "num_diffusion_steps": 1000,
+  "beta_schedule": "linear",
+  "device": "cuda",
+  "save_dir": "models/checkpoints",
+  "use_wandb": false
+}
