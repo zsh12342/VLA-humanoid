@@ -23,16 +23,11 @@ Although current training data primarily focuses on upper body actions like wavi
 ## Demo Video
 
 <div align="center">
-  <video src="video/wave.mp4" controls width="640" height="480">
-    Your browser does not support the video tag.
-  </video>
+  <img src="video/wave.gif" alt="VLA Humanoid Robot Wave Demo" width="640">
 </div>
 
-*Video showing the humanoid robot executing wave actions but still need to upgrade*
+*GIF showing the humanoid robot executing wave actions but still need to upgrade*
 
-**Note**: If the video cannot be played directly in GitHub, you can:
-1. Clone the project locally and play the `video/wave.webm` file
-2. Or click [video/wave.webm](video/wave.webm) to download and watch directly
 
 ## Project Structure
 

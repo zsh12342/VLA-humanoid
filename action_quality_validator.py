@@ -390,12 +390,20 @@ class TrainingQualityMonitor:
                 return {k: convert_to_serializable(v) for k, v in obj.items()}
             elif isinstance(obj, list):
                 return [convert_to_serializable(item) for item in obj]
+            elif isinstance(obj, tuple):
+                return [convert_to_serializable(item) for item in obj]
             elif isinstance(obj, np.ndarray):
                 return obj.tolist()
-            elif isinstance(obj, np.float32) or isinstance(obj, np.float64):
+            elif isinstance(obj, (np.float32, np.float64, np.float16)):
                 return float(obj)
-            elif isinstance(obj, np.int32) or isinstance(obj, np.int64):
+            elif isinstance(obj, (np.int32, np.int64, np.int16, np.int8, np.uint32, np.uint64, np.uint16, np.uint8)):
                 return int(obj)
+            elif isinstance(obj, (np.bool_, bool)):
+                return bool(obj)
+            elif isinstance(obj, np.void):
+                return None
+            elif hasattr(obj, 'item'):  # 处理numpy标量
+                return convert_to_serializable(obj.item())
             else:
                 return obj
         
