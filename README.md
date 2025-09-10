@@ -20,6 +20,18 @@
 - **关键关节**: 左臂的l_arm_pitch(12), l_arm_roll(13), l_arm_yaw(14)
 - **动作指令**: 挥手、抱拳等全身动作
 
+## 演示视频
+
+以下是VLA人形机器人控制系统的演示视频：
+
+<div align="center">
+  <video src="video/wave.webm" controls width="640" height="480">
+    您的浏览器不支持视频标签。
+  </video>
+</div>
+
+*视频展示人形机器人执行挥手动作，具有平滑的轨迹控制*
+
 ## 项目结构
 
 ```
@@ -87,7 +99,7 @@ python3 smooth_act_inference_node.py
 
 ```bash
 # 验证模型性能
-python3 model_vs_robot_comparison.py
+python3 model_vs_robot_comparison.py（该文件为数据与模型输出曲线拟合文件我已删除，如需请自己编写）
 ```
 
 ## 训练配置
