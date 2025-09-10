@@ -22,17 +22,15 @@
 
 ## 演示视频
 
+以下是VLA人形机器人控制系统的演示视频：
+
 <div align="center">
-  <video src="video/wave.webm" controls width="640" height="480">
+  <video src="video/wave.mp4" controls width="640" height="480">
     您的浏览器不支持视频标签。
   </video>
 </div>
 
-*视频展示人形机器人执行挥手动作，具有平滑的轨迹控制*
-
-**注意**: 如果视频无法在GitHub中直接播放，可以：
-1. 克隆项目到本地后播放 `video/wave.webm` 文件
-2. 或者点击 [video/wave.webm](video/wave.webm) 直接下载观看
+*视频展示人形机器人执行挥手动作，运动轨迹控制仍需改进*
 
 ## 项目结构
 
